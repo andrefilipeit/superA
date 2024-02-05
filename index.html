@@ -4,18 +4,235 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Super A - Superamos Sonhos</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  </head>
-  <body>
-    <!-- Image and text -->
-		<nav class="navbar navbar-light bg-light">
-		  <a class="navbar-brand" href="#">
-		    <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-		    Bootstrap
-		  </a>
-		</nav>
 
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  </head>
+
+  <style type="text/css">
+
+    #budget {
+      margin-top:30px;
+      margin-botton:30px;
+      border-bottom:2px dashed rgb(230, 60, 50);
+    }
+
+    .height-button{
+      height: 55px;
+    }
+
+    .margin-menu{
+      margin-top: 40px;
+      margin-bottom: 200px;
+    }
+
+    .border-red{
+      border: 1px solid red;
+    }
+
+    .right-tab{
+      margin-right: 50px;
+    }
+
+    .row-formatter{
+      padding: 30px;
+    }
+
+    .dash-left{
+      border-left: 5px solid rgb(230, 60, 50);
+      padding-left: 10px;
+    }
+
+    .bg-gradientx{
+      background: linear-gradient(to right, #14060B, #220A11); 
+    }
+
+    /* media for nav menu alignt itens center */
+    @media (max-width: 992px) { 
+
+      .center-small-devices{
+        margin: 0 auto;
+      }
+    }
+
+  </style>
+
+
+  <body>
+
+    <div class="container">
+
+      <!-- Superior Menu -->
+      <nav class="navbar navbar-expand-lg navbar-light margin-menu">
+        <a class="navbar-brand border-red center-small-devices " href="#">
+          <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        </a>
+
+        <button class="navbar-toggler height-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-around border-red" id="navbarNav">
+
+          <ul class="navbar-nav">
+            <li class="nav-item right-tab">
+              <a class="nav-link" href="#">Sobre Nós</a>
+            </li>
+            <li class="nav-item right-tab">
+              <a class="nav-link" href="#scroolSpyLocais">Locais</a>
+            </li>
+            <li class="nav-item right-tab">
+              <a class="nav-link" href="#scroolSpyEventos">Eventos</a>
+            </li>
+            <li class="nav-item right-tab">
+              <a class="nav-link" href="#budget">Orçamento</a>
+            </li>
+            <li class="nav-item right-tab">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="center-small-devices">
+          <form class="form-inline my-2 my-lg-0">
+              <button class="btn bg-red border-red height-button" type="submit">Portal do Cliente</button>
+          </form>
+        </div>
+      </nav>
+      <!-- Superior Menu -->
+
+      <div class="row">
+        <div class="left col-lg-6 row-formatter">
+          <h3>Bem vindo à Super A Formaturas</h3>
+          <h1><strong>SUPERAMOS SONHOS</strong></h1>
+          <p>Venha fazer parte desta empresa que é a maior empresa de formaturas do
+            norte e nordeste, com o melhor casting de artista da região. E que tem a
+            obrigação de transformar todos os seus sonhos de formatura e eventos em
+            realidade.
+          </p>
+          <button type="button" class="btn btn-light height-button"><strong>Peça seu Orçamento</strong></button>
+        </div>
+
+        <div class="right col-lg-6 border-red">
+          <h1>DIREITA</h1>
+        </div>
+      </div>
+
+      <div class="row ">
+
+        <div class="left col-lg-6 border-red">
+
+        </div>
+
+        <div class="right col-lg-6 row-formatter">
+          <h1 class="dash-left"><strong>QUEM<BR>SOMOS ?</strong></h1>
+          <p>
+            Super A Formaturas é uma empresa que atua no mercado de eventos, com
+            foco no nicho de formaturas, trabalhando com a gestão completa de todos
+            os eventos que abordam a conclusão de uma etapa colegial (fim do Ensino
+            Médio) e universitária. Fazem parte das competências da empresa
+            arrecadar, assessorar e executar o plano de celebrações nesse estágio de
+            conclusão das turmas.
+          </p>
+        </div>
+      </div>
+
+      <div class="row ">
+        
+        <div class="right col-lg-12 row-formatter">
+          <h1 id="scroolSpyLocais" class="dash-left"><strong>ONDE<BR>ATUAMOS?</strong></h1>
+        </div>
+      </div>
+
+      <div class="row ">
+        
+        <div class="right col-lg-12 row-formatter">
+          <h1 id="scroolSpyEventos"class="dash-left"><strong>NOSSOS<BR>EVENTOS</strong></h1>
+        </div>
+      </div>
+
+       <div class="row ">
+        <div class="right col-lg-6 row-formatter">
+          <h1 class="dash-left"><strong>BAILE DE FORMATURA</strong></h1>
+          <p>Festa mais tradicional do contrato de formatura. Uma festa que reune familiares e amigos dos formandos.</p>
+        </div>
+        <div class="right col-lg-6 row-formatter">
+          IMAGEM
+        </div>
+      </div>
+
+       <div class="row ">
+        <div class="right col-lg-6 row-formatter">
+          IMAGEM
+        </div>
+        <div class="right col-lg-6 row-formatter">
+          <h1 class="dash-left"><strong>JANTAR DOS PAIS</strong></h1>
+          <p>Celebração entre formandos e familiares que antecede o baile de formatura. Momento de festividade e muita alegria entre as famílias convidadas e formandos.</p>
+        </div>
+      </div>
+
+       <div class="row ">
+        <div class="right col-lg-6 row-formatter">
+          <h1 class="dash-left"><strong>CULTO ECUMÊNICO</strong></h1>
+          <p>Celebração ecumênica com o intuito de recebimento da bênção para os anéis de formatura e fechamento de ciclo da jornada acadêmica.</p>
+        </div>
+        <div class="right col-lg-6 row-formatter">
+          IMAGEM
+        </div>
+      </div>
+
+       <div class="row ">
+        <div class="right col-lg-6 row-formatter">
+          IMAGEM
+        </div>
+        <div class="right col-lg-6 row-formatter">
+          <h1 class="dash-left"><strong>DOUTORANDOS</strong></h1>
+          <p>Tradicional festa do carimbo, no formato festival, simbolisa a conclusão do internato. Participam: amigos, parentes e familiares dos formandos.</p>
+        </div>
+      </div>
+
+      <div class="row ">
+        <div class="right col-lg-6 row-formatter">
+          <h1 class="dash-left"><strong>COLAÇÃO DE GRAU</strong></h1>
+          <p>Concretização da graduação e recebimento de grau da instituição de ensino. </p>
+        </div>
+        <div class="right col-lg-6 row-formatter">
+          IMAGEM
+        </div>
+      </div>
+
+       <div class="row ">
+        <div class="right col-lg-6 row-formatter">
+          IMAGEM
+        </div>
+        <div class="right col-lg-6 row-formatter">
+          <h1 class="dash-left"><strong>AULA DA SAUDADE</strong></h1>
+          <p>Momento onde é realizada a última aula da turma e homenagem para professores e funcionários. Também é realizado o descerramento da placa e entrega das réplicas.</p>
+        </div>
+      </div>
+
+      <div class="row ">
+        <div class="right col-lg-6 row-formatter">
+          <h1 class="dash-left"><strong>CERVEJADA</strong></h1>
+          <p>Festa tradicional do curso de medicina, apenas para integrantes da turma + 1 convidado que marca a conclusão do curso.</p>
+        </div>
+        <div class="right col-lg-6 row-formatter">
+          IMAGEM
+        </div>
+      </div>
+
+      <div class="row border-red bg-gradientx">
+        <h1 id="budget" class="text-center text-light">SOLICITE SEU ORÇAMENTO</h1>
+        <form>
+          
+            <input class="mw-100" type="text" name="nome" id="nome" placeholder="Nome"/>
+            <input class="mw-100" type="text" name="email" id="email" placeholder="Seu e-mail"/>
+          
+        </form>
+
+      </div>  
+
+    </div>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>
